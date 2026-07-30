@@ -1,0 +1,56 @@
+generated: '2026-07-19'
+method: derived
+source: >-
+  https://github.com/LindusHealth/django-sdtm-export,
+  https://github.com/LindusHealth/cdisc-rules-engine,
+  https://www.lindushealth.com/capabilities,
+  https://www.lindushealth.com/privacy-policy
+notes: >-
+  Lindus publishes no API, so there are no HTTP/API-protocol conformance claims
+  to assert (no OAuth2, OIDC, FHIR, JSON:API, RFC 9457, pagination or
+  idempotency surface exists). What it does evidence publicly is clinical-data
+  standards work through its open-source repositories, plus data-protection
+  statements in its policies. No named security certification (SOC 2, ISO 27001,
+  HITRUST) or trust center is published on the public site, so no Compliance
+  pointer is claimed.
+standards:
+- id: cdisc-sdtm
+  conforms: true
+  evidence: >-
+    django-sdtm-export exports clinical model instances "while adhering to CDISC
+    SDTM guidelines" — https://github.com/LindusHealth/django-sdtm-export
+- id: cdisc-dataset-json
+  conforms: true
+  evidence: >-
+    django-sdtm-export emits CSV or Dataset-JSON output —
+    https://github.com/LindusHealth/django-sdtm-export
+- id: cdisc-conformance-rules
+  conforms: partial
+  evidence: >-
+    Lindus maintains a fork of the CDISC open-source rules engine —
+    https://github.com/LindusHealth/cdisc-rules-engine (upstream project)
+- id: gdpr
+  conforms: claimed
+  evidence: >-
+    Privacy policy states Lindus is based outside the EU and has appointed an EU
+    representative (Evalian Limited) under the EU GDPR; separate UK/EEA/Australia
+    and US privacy policies are published —
+    https://www.lindushealth.com/privacy-policy
+- id: oauth2
+  conforms: false
+  evidence: no public API or authorization surface found
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration returned 404 on www.lindushealth.com
+- id: fhir
+  conforms: unknown
+  evidence: >-
+    Capabilities page describes AI-powered EHR querying and automatic data
+    abstraction from EMRs, but does not name FHIR or any interoperability
+    profile — https://www.lindushealth.com/capabilities
+- id: rfc9457
+  conforms: false
+  evidence: no public API
+- id: rfc9116
+  conforms: false
+  evidence: /.well-known/security.txt returned 404

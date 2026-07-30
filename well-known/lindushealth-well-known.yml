@@ -1,0 +1,34 @@
+generated: '2026-07-19'
+method: searched
+source: live HTTP probes of https://www.lindushealth.com
+notes: >-
+  Lindus publishes no /.well-known/ discovery surface. The corporate site is a
+  Webflow marketing property and there is no public API host (api., docs., and
+  developers. subdomains do not resolve in DNS). Every probe below returned a
+  real HTTP status; the empty result is the finding, not a gap in the probe.
+host: https://www.lindushealth.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /openapi.json
+  status: 404
+- path: /sitemap.xml
+  status: 404
+- path: /robots.txt
+  status: 200
+unresolved_hosts:
+- api.lindushealth.com
+- docs.lindushealth.com
+- developers.lindushealth.com
+- trust.lindushealth.com
+- status.lindushealth.com

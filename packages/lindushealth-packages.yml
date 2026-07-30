@@ -1,0 +1,45 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/orgs/LindusHealth/repositories
+notes: >-
+  Lindus ships no API client SDKs — there is no public Lindus API to write a
+  client against. The company does publish one first-party open-source Python /
+  Django library plus a fork of the CDISC open-source rules engine. Registry
+  probes for the name "lindus" on npm (0 results) and PyPI (404) returned
+  nothing, and django-sdtm-export is not released to PyPI — it installs from
+  source. Recorded here as first-party packages, NOT as API SDKs.
+packages:
+- language: python
+  registry: github
+  name: django-sdtm-export
+  url: https://github.com/LindusHealth/django-sdtm-export
+  install: pip install git+https://github.com/LindusHealth/django-sdtm-export
+  official: true
+  api_client: false
+  status: pre-release
+  description: >-
+    Django library that lets users define declarative classes to export clinical
+    model instances to CSV or Dataset-JSON while adhering to CDISC SDTM
+    guidelines. README marks it as still under construction.
+  requires: Python 3.8+, Django 3.2+
+- language: python
+  registry: github
+  name: cdisc-rules-engine
+  url: https://github.com/LindusHealth/cdisc-rules-engine
+  official: false
+  api_client: false
+  fork_of: https://github.com/cdisc-org/cdisc-rules-engine
+  description: >-
+    Lindus fork of the CDISC open-source rules engine for validating clinical
+    datasets against CDISC conformance rules. Upstream project, not a Lindus
+    product.
+registries_probed:
+- registry: npm
+  query: lindus
+  result: 0 packages
+- registry: pypi
+  query: lindus
+  result: 404
+- registry: pypi
+  query: django-sdtm-export
+  result: 404
