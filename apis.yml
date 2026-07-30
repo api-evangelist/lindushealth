@@ -1,20 +1,54 @@
 aid: lindushealth
-name: lindushealth
-description: lindushealth is a company surfaced as a portfolio company of balderton-capital and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+name: Lindus Health
+description: >-
+  Lindus (Lindus Health) is a next-generation contract research organization (CRO) that runs
+  end-to-end clinical trials for biotech and pharma sponsors on performance-based contracts, with
+  one integrated team accountable from protocol design through database lock. Its Citrus™
+  AI-assisted trial operating system unifies EDC, eSource, ePRO/eCOA, eConsent, participant
+  pre-screening, CTMS and real-time operational monitoring in a single platform, and its
+  centralized enrollment infrastructure uses AI-powered querying across a 40M+ record EHR database
+  plus digital pre-screening to find and enroll patients inside real-world care pathways. Delivery
+  runs site-based, hybrid or fully decentralized across a network of 1,000+ sites, with therapeutic
+  depth in cardiometabolic, respiratory, psychiatry, women's health, dermatology and diagnostics.
+  Founded by co-CEOs Meri Beckwith and Michael Young. Lindus publishes no public developer API;
+  Citrus is a customer platform for sponsors and sites. Its public technical surface is two GitHub
+  repositories covering CDISC SDTM export and CDISC conformance rules.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/69b1cded3c897ce21d61aa50/69cae38f251d01f254ea797e_open-graph-image-lindus.png
 url: https://raw.githubusercontent.com/api-evangelist/lindushealth/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - balderton-capital
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profile
+x-tier-reason: no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Health
+- Healthcare
+- Clinical Trials
+- Clinical Research
+- CRO
+- Life Sciences
+- Pharmaceuticals
+- Biotech
+- Patient Recruitment
+- Electronic Data Capture
+- CDISC
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +58,38 @@ maintainers:
 common:
 - type: Website
   url: https://www.lindushealth.com/
+- type: Blog
+  url: https://www.lindushealth.com/resources
+- type: News
+  url: https://www.lindushealth.com/news
+- type: Support
+  url: https://www.lindushealth.com/contact
+- type: GitHubOrganization
+  url: https://github.com/LindusHealth
+- type: TermsOfService
+  url: https://www.lindushealth.com/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.lindushealth.com/privacy-policy
+- type: CookiePolicy
+  url: https://www.lindushealth.com/cookie-policy
+- type: Careers
+  url: https://jobs.ashbyhq.com/lindus
+- type: LinkedIn
+  url: https://www.linkedin.com/company/lindushealth/
+- type: Twitter
+  url: https://x.com/LindusHealth
+- type: YouTube
+  url: https://www.youtube.com/@LindusHealth
+- type: Packages
+  url: packages/lindushealth-packages.yml
+- type: Conformance
+  url: conformance/lindushealth-conformance.yml
+- type: LLMsTxt
+  url: llms/lindushealth-llms.txt
+- type: DomainSecurity
+  url: security/lindushealth-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
